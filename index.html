@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-menu">
+        <div class="top-top">
+            <div class="page-name">
+                EpicureoDiario
+            </div>
+            <div class="timer-button">
+                <button class="timer">Timer</button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="recetas-main-container">
+            <div class="recetas-top-container">
+                <div class="recetas-title">
+                    <p>Recetas</p>
+                    <button class="add-btn">Add +</button>
+                </div>
+            </div>
+            <div class="recetas-bottom-container">
+                <div class="move-buttons">
+                    <button id="left"><</button>
+                </div>
+                <div class="recetas-container">
+                    <div class="recetas-content">
+                        <div class="receta-img">
+                            <img class="imagen" src="../images/pollo empanizado.jpg" alt="img not found">
+                        </div>
+                        <div class="receta-info">
+                            <div class="receta-name">
+                                <p class="nombre-receta">Pollo Empanizado</p>
+                            </div>
+                            <div class="info">
+                                <p>Tipo de Cocina: </p>
+                                <p class="tc">Frito, Sarten</p>
+                                <br>
+                                <p>Ingredientes: </p>
+                                <p class="ingredientes">
+                                    Pechuga de Pollo,
+                                    Harina de Trigo,
+                                    Huevos,
+                                    Pan Rallado,
+                                    Sal,
+                                    Pimienta
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="instrucciones">Instrucciones</button>
+                            <button>share</button>
+                            <button class="delete-button">Delete</button>
+                            <button class="edit-button">Edit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="move-buttons">
+                    <button id="right">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="timer-menu">
+        <div class="timer-top">
+            
+        </div>
+        <div class="timer-title">
+            <p>Duración</p>
+        </div>
+        
+        <div class="timer-body">
+            <button class="hours-increase">+</button>
+            <button class="minutes-increase">+</button>
+            <button class="seconds-increase">+</button>
+            <p id="hrs">00</p>
+            <p id="min">00</p>
+            <p id="sec">00</p>
+            <button class="hours-decrease">-</button>
+            <button class="minutes-decrease">-</button>
+            <button class="seconds-decrease">-</button>
+        </div>
+        <br>
+        <div class="timer-btn-action">
+            <button class="timer-start">Start</button>
+            <button class="timer-stop">Stop</button>
+            <button class="timer-restart">Restart</button>
+        </div>
+
+    </div>-->
+
+    <template id="recetas-template">
+        <div class="instrucciones-box">
+            <div class="close-button-container">
+                <button class="close-button">X</button>
+            </div>
+            <div class="info-container-ins">
+                <div class="info-instrucciones">
+                    <p class="text-ins"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="recetas-content">
+            <div class="receta-img">
+                <img id="imagen" src="../images/pollo empanizado.jpg" alt="img not found">
+            </div>
+            <div class="receta-info">
+                <div class="receta-name">
+                    <p class="nombre-receta">Pollo Empanizado</p>
+                </div>
+                <div class="info">
+                    <p>Tipo de Cocina: </p>
+                    <p class="tc">Frito, Sarten</p>
+                    <br>
+                    <p>Ingredientes: </p>
+                    <p class="ingredientes">
+                        Pechuga de Pollo,
+                        Harina de Trigo,
+                        Huevos,
+                        Pan Rallado,
+                        Sal,
+                        Pimienta
+                    </p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="instrucciones">Instrucciones</button>
+                <button>share</button>
+                <button class="delete-button">Delete</button>
+                <button class="edit-button">Edit</button>
+            </div>
+        </div>
+    </template>
+
+</body>
+<script src="script.js"></script>
+</html>

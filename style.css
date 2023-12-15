@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu{
+    width: 100%;
+    height: 10vh;
+}
+
+.top-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    justify-content: space-between;
+}
+
+.timer-button{
+    margin-right: 5%;
+    width: 4%;
+    height: 30%;
+}
+
+.timer-button button{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(220, 220, 220);
+}
+
+.timer-button button:hover{
+    background-color: rgb(155, 155, 155);
+}
+
+.page-name{
+    font-size: 50px;
+    margin-left: 5%;
+}
+
+.search-bar{
+    margin-left: 15%;
+    width: 40%;
+    height: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.search-bar input{
+    border: 0px;
+    padding-left: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.search{
+    width: 3%;
+    height: 56%;
+    background-color: rgb(255, 225, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+}
+
+.search img{
+    height: 50%;
+    width: 50%;
+}
+
+.delete-all{
+    position: absolute;
+    border: 0px;
+    height: 3.4%;
+    width: 2%;
+    background-color: transparent;
+    font-size: 95%;
+    color: gray;
+}
+
+.main{
+    background-color: gray;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recetas-main-container{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.recetas-top-container{
+    display: flex;
+    justify-content: center;
+    height: 5%;
+    margin-top: 2%;
+}
+
+
+
+.recetas-title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    align-items: center;
+}
+
+.recetas-title button{
+    width: 5%;
+    height: 90%;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(220, 220, 220);
+}
+
+.recetas-title button:hover{
+    background-color: rgb(155, 155, 155);
+}
+
+.recetas-title p{
+    margin-left: 1%;
+}
+
+.recetas-bottom-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recetas-container{
+    border-bottom: 1px solid gray;
+    height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-left: 1%;
+
+}
+
+.recetas-content{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    border: .5px solid gray;
+}
+
+.receta-img{
+    width: 100%;
+    height: 50%;
+}
+
+.receta-info{
+    width: 100%;
+    height: 37%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.receta-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.receta-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.info p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.action-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    height: 10%;
+}
+
+.action-buttons button{
+    width: 22%;
+    height: 100%;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 2px 2px 2px rgb(167, 167, 167);
+}
+
+.action-buttons button:hover{
+    background-color: rgb(155, 155, 155);
+}
+
+.instrucciones-box{
+    display: none;
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    background-color: whitesmoke;
+}
+
+.close-button-container{
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    width: 100%;
+    height: 5%;
+}
+
+.close-button{
+    width: 2%;
+    background-color: transparent;
+    border: 0px;
+}
+
+.info-container-ins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+}
+
+.info-instrucciones{
+    width: 90%;
+    height: 95%;
+    color: black;
+}
+
+.text-ins{
+    white-space: pre-line;
+    font-size: larger;
+}
+.move-buttons{
+    width: 1.5%;
+    height: 70%;
+}
+
+.move-buttons button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.move-buttons button:hover{
+    background-color: rgb(155, 155, 155);
+}
+
+.timer-menu{
+    width: 30%;
+    position: absolute;
+    background-color: whitesmoke;
+}
+
+.timer-title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.timer-body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    place-items: center;
+}
+.timer-body p{
+    font-size: 30px;
+}
+
+.timer-body button{
+    font-size: 30px;
+    border: 0px;
+    border-radius: 5px;
+    width: 15%;
+}
+
+.timer-body button:hover{
+    background-color: rgb(155, 155, 155);
+}
+
+.timer-btn-action{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.timer-btn-action button{
+    width: 25%;
+    border: 0px;
+    height: 30px;
+}
+
+.timer-btn-action button:hover{
+    background-color: rgb(155, 155, 155);
+}
+
+.timer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid red;
+    background-color: gray;
+}
