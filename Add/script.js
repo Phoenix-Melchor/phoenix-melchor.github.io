@@ -1,6 +1,6 @@
 const addbtn = document.querySelector('.return-btn')
 addbtn.addEventListener('click', function(){
-    window.location.href = '../Main-Page/index.html'
+    window.location.href = '../index.html'
 })
 
 const name_recipe = document.querySelector('#nombre-recetas')
