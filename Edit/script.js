@@ -145,5 +145,5 @@ function sendApiData(){
         console.error('Error en la solicitud:', error.message);
     });
 
-    window.location.href = '../Main-Page/index.html'
+    window.location.href = '../index.html'
 }
