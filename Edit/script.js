@@ -3,8 +3,6 @@ addbtn.addEventListener('click', function(){
     window.location.href = '../index.html'
 })
 
-const ingrediente_input = document.querySelector('.ingrediente-input')
-const instruccion_input = document.querySelector('.instruccion-input')
 const name_recipe = document.querySelector('#nombre-recetas')
 const tipo_cocina = document.querySelector('#nombre-cocina-receta')
 let firstLoad = true;
@@ -103,12 +101,6 @@ save_btn.addEventListener('click', function(){
     }
     else if(tipo_cocina.value == ''){
         alert("Escribe el tipo de cocina")
-    }
-    else if(ingrediente_input.value == ''){
-        alert("Escribe al menos 1 ingrediente")
-    }
-    else if(instruccion_input.value == ''){
-        alert("Escribe al menos 1 instruccion")
     }
     else{sendApiData()}
 
