@@ -2,7 +2,8 @@ const addbtn = document.querySelector('.return-btn')
 addbtn.addEventListener('click', function(){
     window.location.href = '../index.html'
 })
-
+const ingrediente_input = document.querySelector('.ingrediente-input')
+const instruccion_input = document.querySelector('.instruccion-input')
 const name_recipe = document.querySelector('#nombre-recetas')
 const tipo_cocina = document.querySelector('#nombre-cocina-receta')
 let firstLoad = true;
